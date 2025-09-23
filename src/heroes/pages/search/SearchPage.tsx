@@ -1,11 +1,28 @@
 import { CustomJumbotron } from "@/components/custom/CustomJumbotron";
+import { HeroStats } from "@/heroes/components/HeroStats";
+import { SearchControls } from "./ui/SearchControls";
+import { CustomBreadcrumbs } from "@/components/custom/CustomBreadcrumbs";
 
 
 export const SearchPage = () => {
     return (
         <>
+
             {/* Header */}
             <CustomJumbotron title="Superhero Search" description="Discover, explore, and manage your favorite superheroes and villains" />
+
+            {/* CustomBreadcrums */}
+            <CustomBreadcrumbs currentPage="Superhero/Villains Search"
+                breadcrums={
+                    [{ label: 'Home1', to: '/' }, { label: 'Home1', to: '/' }]
+                }
+            />
+
+            {/* Stats Dashboard */}
+            <HeroStats />
+
+            {/* Filter and Search */}
+            <SearchControls />
         </>
     )
 }
