@@ -1,7 +1,11 @@
 
 
+
 export const HeroPage = () => {
     return (
-        <div>HeroPage</div>
+        <>
+            <div>HeroPage</div>
+
+        </>
     )
 }
