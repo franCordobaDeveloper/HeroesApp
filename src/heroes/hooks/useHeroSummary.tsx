@@ -10,7 +10,4 @@ export const useHeroSummary = () => {
         staleTime: 1000 * 60 * 5 // 5 minutos
     })
 
-
-
-
 }
